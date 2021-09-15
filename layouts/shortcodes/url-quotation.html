@@ -1,0 +1,17 @@
+<blockquote style="background-color: #f2f2f2;
+                   margin-color: #f2f2f2;
+                   border-left: 2px solid #e0e0e0;
+                   padding-left: 2rem;
+                   padding-right: 2rem;
+                   padding-top: 0.2rem;
+                   padding-bottom: 2.2rem;
+                   line-height: 2.2rem;
+                   font-weight: 400;
+                   font-style: normal">
+    <p>{{ .Inner | markdownify }}</p>
+    <span class="cite">
+        <a href="{{ .Get "url" }}">
+          - {{ .Get "source" | markdownify }}
+        </a>
+    </span>
+</blockquote>
